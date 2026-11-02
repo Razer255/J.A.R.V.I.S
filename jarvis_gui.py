@@ -8,7 +8,7 @@ class JarvisGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("JARVIS")
-        self.root.geometry("400x400")
+        self.root.geometry("350x350")
         self.root.config(bg='black')
 
         self.status_label = Label(root, text="JARVIS Offline", bg='black', fg='white', font=("Helvetica", 16))
