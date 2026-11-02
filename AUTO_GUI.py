@@ -26,7 +26,13 @@ def listen_for_command():
         speak("Sorry, I couldn't understand that.")
         print(f"Could not understand the audio or request failed: {e}")
         return ""
-
+def web():
+    # Open WhatsApp Web in a new thread
+    threading.Thread(target=webbrowser.open, args=("https://web.wecp.com",)).start()
+    speak("Opening WhatsApp Web...")
+    print("Opening WhatsApp Web...")
+    time.sleep(2)
+    
 def open_whatsapp_web():
     # Open WhatsApp Web in a new thread
     threading.Thread(target=webbrowser.open, args=("https://web.whatsapp.com",)).start()
